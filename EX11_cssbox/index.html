@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content="Maria Eduarda Ribeiro Viana"/>
+        <meta
+        name="description"
+        content="CSS Box Model"
+        />
+        <meta name="keywods" content="css, box model, CSS Box Model">
+        <title>CSS Box Model</title>
+        <!-- Autora: Maria Eduarda Ribeiro Viana -->
+    <style>
+    * {
+        box-sizing: border-box;
+      }
+
+      .header {
+        background-color: green;
+        padding: 15px;
+        text-align: center;
+      }
+      
+      #logo {
+        width: 280px;
+        float: left;
+      }
+
+      #titulo {
+        color: white;
+        text-align: center;
+        font-size: 200%;
+      }
+      .nav_menu
+      {
+        overflow: hidden;
+        background-color: black;
+      }
+
+      .nav_menu a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .nav_menu a:hover {
+        background-color: #ddd;
+        color: green;
+        transition: 0.2s;
+      }
+
+      .column
+      {
+        float: left;
+        width: 33%;
+        padding: 15px;
+        text-align: justify;
+      }
+
+      h2{
+        color: green;
+        text-align: center;
+      }
+      @media screen and (max-width: 800px)
+      {
+        .column{
+          width: 50%;
+        }   
+      }
+
+      @media screen and (max-width: 500px) 
+      {
+        .columnA{
+          width: 100%;
+        }   
+      }
+
+      .footer{
+        float: left;
+        width: 100%;
+        text-align: center;
+        background-color: gray;
+      }
+
+      .footer a{
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 16px;
+        text-decoration: none;
+      }
+
+      .footer a :hover{
+        background-color: white;
+        color: green;
+      }
+
+      body > div{
+        clear: both;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <div>
+        <img id="logo" src="img/logo_IFRO_JIPA_branca_horizontal.png" />
+      </div>
+      <div><h2 id="titulo">Programação web</h2></div>
+    </div>
+
+    <div class="nav_menu">
+
+      <a href="index.html">Home</a>
+      <a href="faleconosco.html">Fale conosco</a>
+      <a href="sobrenos.html">Sobre nós</a>
+
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <h2>Coluna A</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Maiores vel assumenda molestiae impedit magni architecto
+          quam aperiam. Dolorum, non voluptate maiores optio harum, 
+          illo explicabo neque quo, totam ducimus hic!
+        </p>
+      </div>
+
+      <div class="column">
+        <h2>Coluna B</h2>
+        <iframe src="https://www.youtube.com/embed/bP_JjQyt6VQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div class="column">
+        <h2>Coluna C</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Maiores vel assumenda molestiae impedit magni architecto
+          quam aperiam. Dolorum, non voluptate maiores optio harum, 
+          illo explicabo neque quo, totam ducimus hic!</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <h2>Coluna D</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Maiores vel assumenda molestiae impedit magni architecto
+          quam aperiam. Dolorum, non voluptate maiores optio harum, 
+          illo explicabo neque quo, totam ducimus hic!
+        </p>
+      </div>
+
+      <div class="column">
+        <h2>Coluna E</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Maiores vel assumenda molestiae impedit magni architecto
+          quam aperiam. Dolorum, non voluptate maiores optio harum, 
+          illo explicabo neque quo, totam ducimus hic!</p>
+        </div>
+
+      <div class="column">
+        <h2>Coluna F</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Maiores vel assumenda molestiae impedit magni architecto
+          quam aperiam. Dolorum, non voluptate maiores optio harum, 
+          illo explicabo neque quo, totam ducimus hic!</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="footer">
+        <h1>Footer</h1>
+        <h2 style="color: white; font-size: 18px;">
+        R. Rio Amazonas, 151 - Jardim dos Migrantes, Ji-Paraná - RO
+      </h2>
+      <a href="index.html">Home</a>
+      <a href="faleconosco.html">Fale conosco</a>
+      <a href="sobrenos.html">Sobre nós</a>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
