@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content="Maria Eduarda Ribeiro Viana"/>
+    <meta
+    name="description"
+    content="Formulario de opinião"
+    />
+    <meta name="keywods" content="tabelas">
+    <!-- Autora: Maria Eduarda Ribeiro Viana -->
+    <title>::Formulario em HTML::</title>
+</head>
+<body>
+    <form action="receber-dados.php" method="POST">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="email" id="nome">
+            </p>
+            <p>
+                <label for="nome">Email:</label>
+                <input type="text" name="email" id="email">
+            </p>
+            <p>
+                <input type="submit" name="email" id="email">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Formulário de opinião</legend>
+            <strong>O que você achou do site?</strong>
+            <dl>
+                <dd>
+                    <input type="radio" nome="avaliacao" value="muitobom">Muito bom
+                    <input type="radio" nome="avaliacao" value="bom">Bom
+                    <input type="radio" nome="avaliacao" value="regular">Regular
+                    <input type="radio" nome="avaliacao" value="umlixo">Um lixo
+                </dd>
+            </dl>
+        </p>
+        <p>
+            <strong>Qual seção você mais gostou?</strong>
+            <dl>
+                <dd>
+                    <select name="secao" size="1">
+                        <option value="emcartaz">Em cartaz</option>
+                        <option value="trilhasonora">Trilha sonora</option>
+                        <option value="fotos">Galeria de fotos</option>
+                        <option value="bilheteria">Bilheteria</option>
+                        <option value="outra">Outra</option>
+                    </select>
+                </dd>
+            </dl>
+        </p>
+        <p>
+            <strong>Digite seus comentários no campo abaixo</strong>
+            <dl>
+                <dd>
+                    <textarea name="comentario" rows="5" cols="45"> </textarea>
+                    <p><input type="checkbox">Quero receber novidades do site pelo e-mail</p>
+                    <input type="submit" value="Enviar dados">
+                    <input type="reset" value="Limpar formulário">
+
+                </dd>
+            </dl>
+        </p>
+        </fieldset>
+    </form>
+</body>
+</html>

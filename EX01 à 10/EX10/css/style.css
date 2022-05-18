@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(255, 255, 128);
+    background-image: url('../imagens/lince.png');
+    background-repeat: no-repeat;
+    background-position: top right 20px;
+}
+
+/*ID*/
+#menu{
+    width: 10%;
+}
+
+/*
+classe
+.destaque{
+    background-color: yellow;
+}*/
+
+h1 {
+    color: rgb(54, 14, 83);
+}
+
+p{
+    font-size: 100%;
+    width: 70%;
+}
+
+table{
+    background-color: #faff94;
+    text-align: center;
+    border-collapse: collapse;
+    width: 70%;
+}
+
+th{
+    border: 1px solid;
+    text-align: center;
+    background-color: chocolate;
+}
+
+td{
+    border: 1px solid;
+}
+
