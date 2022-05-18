@@ -1,0 +1,12 @@
+body{
+    background-color:#D8BFD8;
+    background-attachment: fixed;
+}
+
+h1, h2, h3{
+    color: #4B0082;
+}
+
+p{
+    font-size: 20px;
+}
